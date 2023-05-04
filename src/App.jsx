@@ -19,7 +19,7 @@ function App() {
                       </div>
                     </div>
                     <div className="card-body">
-                      <h2>{element.title}</h2>
+                      <h3>{element.title}</h3>
                       <q>{element.testimonial}</q>
                     </div>
                   </div>
