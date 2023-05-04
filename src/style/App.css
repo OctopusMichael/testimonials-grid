@@ -17,20 +17,22 @@
 body {
   background-color: var(--lightGrayishBlue);
   font-family: "Barlow Semi Condensed", sans-serif;
+  
 }
 
 .container {
   min-width: 375px;
   max-height: 1440px;
   width: 100%;
-  margin: 100px auto 0px;
-  height: auto;
+  
 }
 
 .cards {
   display: grid;
   grid-template-columns: repeat(1);
   gap: 30px;
+  margin: 50px 0px ;
+  
 }
 
 .card {
@@ -39,6 +41,7 @@ body {
   padding: 40px;
   border-radius: 10px;
   color: white;
+  box-shadow: 0px 4px 20px  rgba(0, 0, 0, 0.363);
 }
 
 .card.uno {
@@ -119,8 +122,6 @@ body {
     min-width: 375px;
     max-height: 1440px;
     width: 100%;
-    margin: 100px auto 0px;
-    height: auto;
   }
 
   .cards {
@@ -128,12 +129,12 @@ body {
     grid-template-columns: repeat(4);
     gap: 30px;
     width: 90%;
-    margin: auto;
+    margin: 100px auto;
   }
 
   .card {
     width: 100%;
-    margin: none;
+    margin: 0px 0px 0px 0px;
     padding: 40px;
     border-radius: 10px;
     color: white;
@@ -165,72 +166,108 @@ body {
 }
 
 @media only screen and (min-width: 992px) {
+
+  body {
+    background-color: var(--lightGrayishBlue);
+    font-family: "Barlow Semi Condensed", sans-serif;
+    height: 100vh;
+   
+    
+  }
   .container {
     min-width: 375px;
     max-height: 1440px;
     width: 100%;
-    margin: 150px auto 0px;
-    height: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
   }
-
+  
   .cards {
     display: grid;
     grid-template-columns: repeat(6);
     gap: 30px;
-    width: 80%;
-    margin: auto;
+    width: 70%;
+    margin:  0px 0px 0px 0px;
+    
+   
+    
   }
 
   .card {
     width: 100%;
-    margin: none;
-    padding: 40px;
+    margin: 0px 0px 0px 0px;
+    padding: 20px;
     border-radius: 10px;
     color: white;
     height: 100%;
+    
   }
 
+  .card-header{
+    margin-bottom: 10px;
+  }
   .card.uno {
     background-color: var(--moderateViolet);
     background-position:  80% 0%;
     background-size: 20%;
     grid-area: 1/1/2/4;
+    width: 541px;
+    height: 280px;
+    
   }
   .card.dos {
     background-color: var(--veryDarkGrayishBlue);
     grid-area: 1/4/2/5;
+    width: 253px;
+    height: 280px;
+    
+    
   }
   .card.tres {
     background-color: var(--white);
     color: black;
     grid-area: 2/1/3/2;
+    width: 253px;
+    height: 280px;
+    
+    
   }
   .card.cuatro {
     background-color: var(--veryDarkBlackishBlue);
     grid-area: 2/2/3/5;
+    width: 541px;
+    height: 280px;
+    
   }
   .card.cinco {
     background-color: var(--white);
     color: black;
-    grid-area: 1/6/3/5;
+    grid-area: 1/5/3/6;
+    height: 100%;
+    width: 253px;
+  
+    
+    
   }
+  .card-body h3 {
+    margin-bottom: 10px;
+   
+  }
+  
 
-  .card-body h2 {
-    margin-bottom: 20px;
-  }
-
-  .card.dos h2 {
-    margin-bottom: 20px;
-  }
-  .card.tres h2 {
-    margin-bottom: 45px;
-  }
-
-  .card.cinco h2 {
-    margin-bottom: 20px;
+ 
+  .card.tres q {
+    font-size: 14px;
+    color: var(--veryDarkGrayishBlue);
+  
+   
   }
   .card.cinco q {
-    font-size: 18px;
+    font-size: 14px;
     color: var(--veryDarkGrayishBlue);
   }
 }
